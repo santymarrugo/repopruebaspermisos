@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "6f7848bb-fda7-46ee-b690-ea54e9931931",
+		"name": "Indicadores",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "FindAllIndicators",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkYyRDQ2NTgyMUY1QjE2QTU3QkZENDQ3NUVBNzgwRTk1MzlGMTFEOThSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6Ijh0UmxnaDliRnFWN19VUjE2bmdPbFRueEhaZyJ9.eyJuYmYiOjE2ODc0Mzk0OTIsImV4cCI6MTY4NzUyNTg5MiwiaXNzIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwIiwiYXVkIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IlNpaWdvV2ViQWNjb3VudGluZyIsInN1YiI6IjEwNjYwNzYiLCJhdXRoX3RpbWUiOjE2ODc0Mzk0OTIsImlkcCI6ImxvY2FsIiwibmFtZSI6IlFBQXJxdWl0ZWN0dXJhTnVldm9TaWlnb051YmUwMDNAeW90bWFpbC5jb20iLCJtYWlsX3NpaWdvIjoiUUFBcnF1aXRlY3R1cmFOdWV2b1NpaWdvTnViZTAwM0B5b3RtYWlsLmNvbSIsImNsb3VkX3RlbmFudF9jb21wYW55X2tleSI6IlFBQXJxdWl0ZWN0dXJhTnVldm9TaWlnb051YmUwMDMiLCJ1c2Vyc19pZCI6IjM1MjQ3IiwidGVuYW50X2lkIjoiMHgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDE4ODY4NiIsInVzZXJfbGljZW5zZV90eXBlIjoiMCIsInBsYW5fdHlwZSI6IjUiLCJ0ZW5hbnRfc3RhdGUiOiIxIiwibXVsdGl0ZW5hbnRfaWQiOiIxMDQiLCJjb21wYW5pZXMiOiIxIiwiYXBpX3N1YnNjcmlwdGlvbl9rZXkiOiIiLCJhY2NvdW50YW50IjoiZmFsc2UiLCJqdGkiOiIyQjM0QjgxMDVDRkJGMDUyMURGREU3RDAzQjg1Mjc2QyIsImlhdCI6MTY4NzQzOTQ5Miwic2NvcGUiOlsiV2ViQXBpIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbImN1c3RvbSJdfQ.FZxVd62EXB6uT4KjhQ1RlK06BpxjtEtR8lTsQkNW74DvxNxsstzwjh4c0JxMFvHwf_fK9A7xu9KWJAr-WPectxqIoeKImSjcrFkfRh9NKqYm-hcumryl7S4iLXzC-qEVfzTXhm9AEkfr8nBUK6ZeuiLC0WgKSAUSL3o0kk7IHbW-ngQwsjUL2dHRqRKlaRNYD4h1V3TPtaWhF3zz7mD_QRVYX3afPdSifMJY-wKMI8OqPy4HlivlZ-aVy-1OaurD75EPMgGtbcTn64E8MFYKk7Caos6xR7SyzamZ5jp52tTHtVPXHpWE27L9N54GdPQVLqi-w6h8lmuPniQngPilxA"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:38687/api/v1/indicators?start=1672531200000&end=1686916800000&forceReload=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "38687",
+					"path": [
+						"api",
+						"v1",
+						"indicators"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1672531200000"
+						},
+						{
+							"key": "end",
+							"value": "1686916800000"
+						},
+						{
+							"key": "forceReload",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "FindIndicatorByCode",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6IkYyRDQ2NTgyMUY1QjE2QTU3QkZENDQ3NUVBNzgwRTk1MzlGMTFEOThSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6Ijh0UmxnaDliRnFWN19VUjE2bmdPbFRueEhaZyJ9.eyJuYmYiOjE2ODc0Mzk0OTIsImV4cCI6MTY4NzUyNTg5MiwiaXNzIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwIiwiYXVkIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IlNpaWdvV2ViQWNjb3VudGluZyIsInN1YiI6IjEwNjYwNzYiLCJhdXRoX3RpbWUiOjE2ODc0Mzk0OTIsImlkcCI6ImxvY2FsIiwibmFtZSI6IlFBQXJxdWl0ZWN0dXJhTnVldm9TaWlnb051YmUwMDNAeW90bWFpbC5jb20iLCJtYWlsX3NpaWdvIjoiUUFBcnF1aXRlY3R1cmFOdWV2b1NpaWdvTnViZTAwM0B5b3RtYWlsLmNvbSIsImNsb3VkX3RlbmFudF9jb21wYW55X2tleSI6IlFBQXJxdWl0ZWN0dXJhTnVldm9TaWlnb051YmUwMDMiLCJ1c2Vyc19pZCI6IjM1MjQ3IiwidGVuYW50X2lkIjoiMHgwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDE4ODY4NiIsInVzZXJfbGljZW5zZV90eXBlIjoiMCIsInBsYW5fdHlwZSI6IjUiLCJ0ZW5hbnRfc3RhdGUiOiIxIiwibXVsdGl0ZW5hbnRfaWQiOiIxMDQiLCJjb21wYW5pZXMiOiIxIiwiYXBpX3N1YnNjcmlwdGlvbl9rZXkiOiIiLCJhY2NvdW50YW50IjoiZmFsc2UiLCJqdGkiOiIyQjM0QjgxMDVDRkJGMDUyMURGREU3RDAzQjg1Mjc2QyIsImlhdCI6MTY4NzQzOTQ5Miwic2NvcGUiOlsiV2ViQXBpIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbImN1c3RvbSJdfQ.FZxVd62EXB6uT4KjhQ1RlK06BpxjtEtR8lTsQkNW74DvxNxsstzwjh4c0JxMFvHwf_fK9A7xu9KWJAr-WPectxqIoeKImSjcrFkfRh9NKqYm-hcumryl7S4iLXzC-qEVfzTXhm9AEkfr8nBUK6ZeuiLC0WgKSAUSL3o0kk7IHbW-ngQwsjUL2dHRqRKlaRNYD4h1V3TPtaWhF3zz7mD_QRVYX3afPdSifMJY-wKMI8OqPy4HlivlZ-aVy-1OaurD75EPMgGtbcTn64E8MFYKk7Caos6xR7SyzamZ5jp52tTHtVPXHpWE27L9N54GdPQVLqi-w6h8lmuPniQngPilxA"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:38687/api/v1/indicators/CH001?start=1672531200000&end=1686916800000&forceReload=false",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "38687",
+					"path": [
+						"api",
+						"v1",
+						"indicators",
+						"CH001"
+					],
+					"query": [
+						{
+							"key": "start",
+							"value": "1672531200000"
+						},
+						{
+							"key": "end",
+							"value": "1686916800000"
+						},
+						{
+							"key": "forceReload",
+							"value": "false"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "190192c0-ef4c-47f7-b557-aa8e291fc059",
+		"name": "msSearch",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16562388"
+	},
+	"item": [
+		{
+			"name": "QuickSearch",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkQ3OTkxNEU2MTJFRkI4NjE5RDNFQ0U4REFGQTU0RDFBMDdCQjM5QjJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjE1a1U1aEx2dUdHZFBzNk5yNlZOR2dlN09iSSJ9.eyJuYmYiOjE2ODU1NDU0NTQsImV4cCI6MTY4NTYzMTg1NCwiaXNzIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwIiwiYXVkIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IlNpaWdvV2ViIiwic3ViIjoiMTA2NjA1NiIsImF1dGhfdGltZSI6MTY4NTU0NTQ1NCwiaWRwIjoibG9jYWwiLCJuYW1lIjoiUUFBcnF1aXRlY3R1cmFOdWV2b1NpaWdvTnViZV9QYW8wMDFAeW90bWFpbC5jb20iLCJtYWlsX3NpaWdvIjoiUUFBcnF1aXRlY3R1cmFOdWV2b1NpaWdvTnViZV9QYW8wMDFAeW90bWFpbC5jb20iLCJjbG91ZF90ZW5hbnRfY29tcGFueV9rZXkiOiJRQUFycXVpdGVjdHVyYU51ZXZvU2lpZ29OdWJlX1BhbzAwMSIsInVzZXJzX2lkIjoiMzUyMjYiLCJ0ZW5hbnRfaWQiOiIweDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTg4NjY1IiwidXNlcl9saWNlbnNlX3R5cGUiOiIwIiwicGxhbl90eXBlIjoiNSIsInRlbmFudF9zdGF0ZSI6IjEiLCJtdWx0aXRlbmFudF9pZCI6IjEwNCIsImNvbXBhbmllcyI6IjIiLCJhcGlfc3Vic2NyaXB0aW9uX2tleSI6IiIsImFjY291bnRhbnQiOiJmYWxzZSIsImp0aSI6IjNBMzdCMDJDOTUzMDIzQTU5NkIyRDBDMDg4QTZEMDQ3IiwiaWF0IjoxNjg1NTQ1NDU0LCJzY29wZSI6WyJvcGVuaWQiLCJXZWJBcGkiLCJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsiY3VzdG9tIl19.dIDkx5vPCLzmaMKC4WLX0gchV236g5-oIDfQaSDNYqi7OlUYjRsN2W4Ut2euIf2FcQ-agyTnwJrZ06BbM0-XlmfKKvYyIXXupcyAr49nWvRNNAv-NmTjWz6CqPRDLyN5NdjGfVcWzBmmkX1sHekOor4Cw-9cEnj68ti8U4IOrk5SAsrZOQ5NGtd5U2QjJc8bRZCIcXgu3rM8aTL2BxrHhG-VhkN8U7iKyJUxtzkRDhyNIhgVdqzjcOT37skag3i2cdbb8VNneY5GNPs835I0elEtnUyQ15jJOv88Vcqyn4BAEGT92jmD9O_UNW3HVw8HDhO_2AFqUXsqsXwc0k4oOg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"queryString\": \"fv-1\",\r\n  \"queryType\": 6,\r\n  \"typeQuickSearch\": 0\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://servicesqa.siigo.com/cross/api/v1/quicksearch",
+					"protocol": "https",
+					"host": [
+						"servicesqa",
+						"siigo",
+						"com"
+					],
+					"path": [
+						"cross",
+						"api",
+						"v1",
+						"quicksearch"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "QuickSearch",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkQ3OTkxNEU2MTJFRkI4NjE5RDNFQ0U4REFGQTU0RDFBMDdCQjM5QjJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjE1a1U1aEx2dUdHZFBzNk5yNlZOR2dlN09iSSJ9.eyJuYmYiOjE2ODU1NDU0NTQsImV4cCI6MTY4NTYzMTg1NCwiaXNzIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwIiwiYXVkIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IlNpaWdvV2ViIiwic3ViIjoiMTA2NjA1NiIsImF1dGhfdGltZSI6MTY4NTU0NTQ1NCwiaWRwIjoibG9jYWwiLCJuYW1lIjoiUUFBcnF1aXRlY3R1cmFOdWV2b1NpaWdvTnViZV9QYW8wMDFAeW90bWFpbC5jb20iLCJtYWlsX3NpaWdvIjoiUUFBcnF1aXRlY3R1cmFOdWV2b1NpaWdvTnViZV9QYW8wMDFAeW90bWFpbC5jb20iLCJjbG91ZF90ZW5hbnRfY29tcGFueV9rZXkiOiJRQUFycXVpdGVjdHVyYU51ZXZvU2lpZ29OdWJlX1BhbzAwMSIsInVzZXJzX2lkIjoiMzUyMjYiLCJ0ZW5hbnRfaWQiOiIweDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTg4NjY1IiwidXNlcl9saWNlbnNlX3R5cGUiOiIwIiwicGxhbl90eXBlIjoiNSIsInRlbmFudF9zdGF0ZSI6IjEiLCJtdWx0aXRlbmFudF9pZCI6IjEwNCIsImNvbXBhbmllcyI6IjIiLCJhcGlfc3Vic2NyaXB0aW9uX2tleSI6IiIsImFjY291bnRhbnQiOiJmYWxzZSIsImp0aSI6IjNBMzdCMDJDOTUzMDIzQTU5NkIyRDBDMDg4QTZEMDQ3IiwiaWF0IjoxNjg1NTQ1NDU0LCJzY29wZSI6WyJvcGVuaWQiLCJXZWJBcGkiLCJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsiY3VzdG9tIl19.dIDkx5vPCLzmaMKC4WLX0gchV236g5-oIDfQaSDNYqi7OlUYjRsN2W4Ut2euIf2FcQ-agyTnwJrZ06BbM0-XlmfKKvYyIXXupcyAr49nWvRNNAv-NmTjWz6CqPRDLyN5NdjGfVcWzBmmkX1sHekOor4Cw-9cEnj68ti8U4IOrk5SAsrZOQ5NGtd5U2QjJc8bRZCIcXgu3rM8aTL2BxrHhG-VhkN8U7iKyJUxtzkRDhyNIhgVdqzjcOT37skag3i2cdbb8VNneY5GNPs835I0elEtnUyQ15jJOv88Vcqyn4BAEGT92jmD9O_UNW3HVw8HDhO_2AFqUXsqsXwc0k4oOg",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"queryString\": \"fv-1\",\r\n  \"queryType\": 6,\r\n  \"typeQuickSearch\": 0\r\n} ",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://servicesqa.siigo.com/cross/api/v1/quicksearch",
+							"protocol": "https",
+							"host": [
+								"servicesqa",
+								"siigo",
+								"com"
+							],
+							"path": [
+								"cross",
+								"api",
+								"v1",
+								"quicksearch"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Length",
+							"value": "1781"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "api-supported-versions",
+							"value": "1.0"
+						},
+						{
+							"key": "request-context",
+							"value": "appId="
+						},
+						{
+							"key": "x-envoy-upstream-service-time",
+							"value": "7"
+						},
+						{
+							"key": "x-krakend",
+							"value": "Version undefined"
+						},
+						{
+							"key": "x-krakend-completed",
+							"value": "false"
+						},
+						{
+							"key": "X-Cache",
+							"value": "CONFIG_NOCACHE"
+						},
+						{
+							"key": "X-Azure-Ref",
+							"value": "0PHl3ZAAAAACUI2EZxIpYTYnvo3muxPZuQk9HMzBFREdFMDIwNgAzNDJhYWVhZC0yMjZjLTRmZmMtODBlMi1hYTZiYmMxMjQ1MjE="
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 31 May 2023 16:43:39 GMT"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"UrlSearchTitle\": \"#/reports/2000/5349?Type=1&WHERE=8QRxRUyQwK1KGf37XrfKlIzaknqscL%2bE64CLgSZ%2bfYH3LmdWsw5nlBJ3A6nNPTe5InkHwCxabP0P%2beZNEdkLCoZ4msSdEr1Sb3shIZ%2bUnK0%2bdlGo%2bbXPnIYI3k%2fJWhat&IsQuickSearch=True&QueryString=FV-1&ByCode=0\",\n        \"SearchTitle\": \"Invoices\",\n        \"Data\": [\n            {\n                \"UrlEntity\": \"Default.aspx?TabID=843&ERPDocumentID=352743\",\n                \"CodeEntity\": \"FV-1-1\",\n                \"Description\": \"860.503.617\",\n                \"ExtraInfo1\": \"\",\n                \"EntityInfo\": null,\n                \"ExtraInfo2\": \"\",\n                \"DocumentID\": null\n            },\n            {\n                \"UrlEntity\": \"Default.aspx?TabID=843&ERPDocumentID=352760\",\n                \"CodeEntity\": \"FV-1-2\",\n                \"Description\": \"860.503.617\",\n                \"ExtraInfo1\": \"\",\n                \"EntityInfo\": null,\n                \"ExtraInfo2\": \"\",\n                \"DocumentID\": null\n            },\n            {\n                \"UrlEntity\": \"Default.aspx?TabID=843&ERPDocumentID=352831\",\n                \"CodeEntity\": \"FV-1-3\",\n                \"Description\": \"860.503.617\",\n                \"ExtraInfo1\": \"\",\n                \"EntityInfo\": null,\n                \"ExtraInfo2\": \"\",\n                \"DocumentID\": null\n            },\n            {\n                \"UrlEntity\": \"Default.aspx?TabID=843&ERPDocumentID=352988\",\n                \"CodeEntity\": \"FV-1-4\",\n                \"Description\": \"860.503.617\",\n                \"ExtraInfo1\": \"\",\n                \"EntityInfo\": null,\n                \"ExtraInfo2\": \"\",\n                \"DocumentID\": null\n            },\n            {\n                \"UrlEntity\": \"Default.aspx?TabID=843&ERPDocumentID=352992\",\n                \"CodeEntity\": \"FV-1-5\",\n                \"Description\": \"860.503.617\",\n                \"ExtraInfo1\": \"\",\n                \"EntityInfo\": null,\n                \"ExtraInfo2\": \"\",\n                \"DocumentID\": null\n            },\n            {\n                \"UrlEntity\": \"Default.aspx?TabID=843&ERPDocumentID=367121\",\n                \"CodeEntity\": \"FV-1-6\",\n                \"Description\": \"860.503.617\",\n                \"ExtraInfo1\": \"\",\n                \"EntityInfo\": null,\n                \"ExtraInfo2\": \"\",\n                \"DocumentID\": null\n            },\n            {\n                \"UrlEntity\": \"Default.aspx?TabID=843&ERPDocumentID=381668\",\n                \"CodeEntity\": \"FV-1-7\",\n                \"Description\": \"860.503.617\",\n                \"ExtraInfo1\": \"\",\n                \"EntityInfo\": null,\n                \"ExtraInfo2\": \"\",\n                \"DocumentID\": null\n            },\n            {\n                \"UrlEntity\": \"Default.aspx?TabID=843&ERPDocumentID=460572\",\n                \"CodeEntity\": \"FV-1-8\",\n                \"Description\": \"222222222222\",\n                \"ExtraInfo1\": \"\",\n                \"EntityInfo\": null,\n                \"ExtraInfo2\": \"\",\n                \"DocumentID\": null\n            }\n        ],\n        \"DataColumnsName\": [\n            \"QSCode\",\n            \"QSDescription\",\n            \"QSAccountName\",\n            \"QSERPDocumentID\"\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "QuickSearch Ecuador",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjU1OTg0QjFEMjg5NzQwRTY5MkI1M0JDMEU0NTZGMDdFRkZFMTI5MjZSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IlZaaExIU2lYUU9hU3RUdkE1RmJ3ZnZfaEtTWSJ9.eyJuYmYiOjE2MjMyNjQzMzUsImV4cCI6MTYyMzM1MDczNSwiaXNzIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwIiwiYXVkIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IlNpaWdvV2ViIiwic3ViIjoiNDI0ODAwIiwiYXV0aF90aW1lIjoxNjIzMjY0MzM1LCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJTaWlnb0BNb3ZpbEZFLmNvbSIsIm1haWxfc2lpZ28iOiJTaWlnb0BNb3ZpbEZFLmNvbSIsImNsb3VkX3RlbmFudF9jb21wYW55X2tleSI6IlNpaWdvTW92aWxGRSIsInVzZXJzX2lkIjoiNjI4MSIsInRlbmFudF9pZCI6IjB4MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAxNTQ1NjAiLCJ1c2VyX2xpY2Vuc2VfdHlwZSI6IjAiLCJwbGFuX3R5cGUiOiI1IiwidGVuYW50X3N0YXRlIjoiMSIsIm11bHRpdGVuYW50X2lkIjoiMzQiLCJjb21wYW5pZXMiOiIxIiwiYXBpX3N1YnNjcmlwdGlvbl9rZXkiOiIiLCJhY2NvdW50YW50IjoiZmFsc2UiLCJqdGkiOiJFQjc2OTI3MTFDMzdGRDU0MUNCRjA2NUZCQTU2NDNFQSIsImlhdCI6MTYyMzI2NDMzNSwic2NvcGUiOlsiV2ViQXBpIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbImN1c3RvbSJdfQ.LO9_ynIWC4xuVEHakb-Z8kRtMM9tUDTqQiBTgjlVAaj1FbvZQ-Lu0VwEAee6i2s7hTTp4PQzkSp2N11QHF4Z1QtkjLjWFhdbcxBHFJiI8n4RGt8eA3BQmFA8pKcS2MX-KX43UqStwLZ-nDHeTEnFb6DF8ccU-ZJYXxR5t8j2J-q1AtH7n8kS9c3P2WWdjkFdCmcDXXsDJKePWtIWUQHHfSIFvG1OOCHUmehPGsTmGxm0g4e22ZbDG2KsFNvCMM829uzuq7vGCt5Jv5BT24021adLnPbfuTiraK4wgbxfiOiiROCIhYtJc5Z-iepF68sSlYWvXCFyIhS-K-2njYd4wg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"queryString\":\"nota crédito\",\"queryType\":-1,\"typeQuickSearch\":1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://servicesqa.siigo.ec/cross/api/v1/quicksearch",
+					"protocol": "https",
+					"host": [
+						"servicesqa",
+						"siigo",
+						"ec"
+					],
+					"path": [
+						"cross",
+						"api",
+						"v1",
+						"quicksearch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QuickSearch Prod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    if (pm.response.code != 200){\r",
+							"        console.log(pm.response)\r",
+							"    }\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkQ3OTkxNEU2MTJFRkI4NjE5RDNFQ0U4REFGQTU0RDFBMDdCQjM5QjJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjE1a1U1aEx2dUdHZFBzNk5yNlZOR2dlN09iSSJ9.eyJuYmYiOjE2NTk2MjYxNzksImV4cCI6MTY1OTcxMjU3OSwiaXNzIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwIiwiYXVkIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IlNpaWdvV2ViQWNjb3VudGluZyIsInN1YiI6IjcwNDYzNCIsImF1dGhfdGltZSI6MTY1OTYyNjE3OSwiaWRwIjoibG9jYWwiLCJuYW1lIjoiYWRtaW5AY2FsaWRhZHBpbG90b2ZlLmNvbSIsIm1haWxfc2lpZ28iOiJhZG1pbkBjYWxpZGFkcGlsb3RvZmUuY29tIiwiY2xvdWRfdGVuYW50X2NvbXBhbnlfa2V5IjoiQ2FsaWRhZFBpbG90b0ZFIiwidXNlcnNfaWQiOiI0OTQiLCJ0ZW5hbnRfaWQiOiIweDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMjQzNTM5IiwidXNlcl9saWNlbnNlX3R5cGUiOiIyIiwicGxhbl90eXBlIjoiNSIsInRlbmFudF9zdGF0ZSI6IjEiLCJtdWx0aXRlbmFudF9pZCI6IjczIiwiY29tcGFuaWVzIjoiMSIsImFwaV9zdWJzY3JpcHRpb25fa2V5IjoiIiwiYWNjb3VudGFudCI6ImZhbHNlIiwianRpIjoiNTg5NzYzRUFDNjBBNkQ3MEYwRDZDMzZGOTEwNDQ2RTQiLCJpYXQiOjE2NTk2MjYxNzksInNjb3BlIjpbIldlYkFwaSIsIm9mZmxpbmVfYWNjZXNzIl0sImFtciI6WyJjdXN0b20iXX0.gBLXIhsmKw_vBm0bwIzK_tHSuXuP1qiXgQXKqYBEVvJWt-juA_aPRiC3Jc6VLmS304hfnkISb7QnyrrAsMv_sTd5zYwuaWZnZZGolUWeEmB9sGd2M-EyKZdrTYRCaC4ao38s0UmuU2Q65k54tRR0LTYbcoozz28bLgBszMzVF_Zf1Z2ikAtEcU9TiAQEHS_up1Izpm24vai8y8gzX_pjSFV16dhQU9EWP8-UvfkJCRk5PySNYPc87pkZX0TnymuD8_vL9FRRFLtNzxIjOVBn2NP22vQRRQd4fcVjbaqrxnf4R-XwOANwqpZFDXG15AyCPgJ-4qHo5cTV_k2wZB022Q",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"queryString\": \"f\",\r\n  \"queryType\": 6,\r\n  \"typeQuickSearch\": 0\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://services2.siigo.com/cross/api/v1/quicksearch",
+					"protocol": "https",
+					"host": [
+						"services2",
+						"siigo",
+						"com"
+					],
+					"path": [
+						"cross",
+						"api",
+						"v1",
+						"quicksearch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QuickSearch Prod Academico",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg2NkRBQTBENkEzQ0FFMjE4MjE1QjdEMTEwOUFBQUJCREE5RTI3NkZSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6ImhtMnFEV284cmlHQ0ZiZlJFSnFxdTlxZUoyOCJ9.eyJuYmYiOjE2MjAyMjkwOTcsImV4cCI6MTYyMDMxNTQ5NywiaXNzIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwIiwiYXVkIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IlNpaWdvV2ViIiwic3ViIjoiMjY5IiwiYXV0aF90aW1lIjoxNjIwMjI5MDk3LCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJtYWdvQG1haWwuY29tIiwibWFpbF9zaWlnbyI6Im1hZ29AbWFpbC5jb20iLCJjbG91ZF90ZW5hbnRfY29tcGFueV9rZXkiOiJQcmVuZGFzU0FTIiwidXNlcnNfaWQiOiIyNjkiLCJ0ZW5hbnRfaWQiOiIweDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTkxMDcxIiwidXNlcl9saWNlbnNlX3R5cGUiOiIwIiwicGxhbl90eXBlIjoiNSIsInRlbmFudF9zdGF0ZSI6IjEiLCJtdWx0aXRlbmFudF9pZCI6IjE0MCIsImNvbXBhbmllcyI6Im51bGwiLCJhcGlfc3Vic2NyaXB0aW9uX2tleSI6IiIsImp0aSI6IjI2RDA3MjlFNDY1REJDMDk0OUYyODBGNTNBNEI4QUNCIiwiaWF0IjoxNjIwMjI5MDk3LCJzY29wZSI6WyJXZWJBcGkiLCJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsiY3VzdG9tIl19.ViGFYyZLBJ7zNoovv3uSYafXGUUkhaNAdrEzs3mFrPnGrNUOsIOWFPy1bYHrFuv0_XqOVXz5jx1zV4EvR7mOWr2BEwF8ntwjRepflyHk-nhAdX7Fzjq2-nx2bm2exmauZvjyxMyA3qbjauQ4W012tKCnx_EepSZGjpeUViv592RZqMwtIGtOYphPn6eH6ezbr_yFzYMCemIuOo1XcyyaU-2yjBMZdeINZ2xyMlSly7pMeweLlB2ufQQF9AdqdzTRTOnixbkzWS68xPq8Odqq644vvbTLRcRqTwvihZmHNmmXAY37QEDO0rzkI3VrksvQ2Jqali5Q5n1rmJYhqCYQ_w",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"queryString\": \"f\",\r\n  \"queryType\": 6,\r\n  \"typeQuickSearch\": 1\r\n} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://services.siigo.com/cross/api/v1/quicksearch",
+					"protocol": "https",
+					"host": [
+						"services",
+						"siigo",
+						"com"
+					],
+					"path": [
+						"cross",
+						"api",
+						"v1",
+						"quicksearch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QuickSearch local",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkQ3OTAyM0E1RDhDMTJFRUFERkY3NDhGQzNEOUEyQzNENEIxMjIzMzZSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjE1QWpwZGpCTHVyZjkwajhQWm9zUFVzU0l6WSJ9.eyJuYmYiOjE2MTk2MTQyMDUsImV4cCI6MTYxOTcwMDYwNSwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1MDAwL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IlNpaWdvV2ViIiwic3ViIjoiNjI4MSIsImF1dGhfdGltZSI6MTYxOTYxNDIwNSwiaWRwIjoibG9jYWwiLCJuYW1lIjoiU2lpZ29ATW92aWxGRS5jb20iLCJtYWlsX3NpaWdvIjoiU2lpZ29ATW92aWxGRS5jb20iLCJjbG91ZF90ZW5hbnRfY29tcGFueV9rZXkiOiJTaWlnb01vdmlsRkUiLCJ1c2Vyc19pZCI6IjYyODEiLCJ0ZW5hbnRfaWQiOiIweDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTU0NTYwIiwidXNlcl9saWNlbnNlX3R5cGUiOiIwIiwicGxhbl90eXBlIjoiNSIsInRlbmFudF9zdGF0ZSI6IjEiLCJtdWx0aXRlbmFudF9pZCI6IjM0IiwiY29tcGFuaWVzIjoibnVsbCIsImp0aSI6IkVCQkYyQjAxRDRBNDQwNTgzM0E0QjFEREFEODQ5Q0NEIiwiaWF0IjoxNjE5NjE0MjA1LCJzY29wZSI6WyJXZWJBcGkiLCJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsiY3VzdG9tIl19.esOEiAWxQykIEts1hCSkEnwH-I43IjqtIX6zdaAC0hHCgZ7YTsah5a3sjAWk80ct_ukfEgoPxlIGdDe70r4wDEmxeHN5FWzj4YVgWBZI5Gw9kHCa-TH35wFHG4wkEPjwFTHpQFZTfj_WxAUy7JElXIUf4fp5MACaj3cZ3DiEQ2nP8BPsBlPWUIr2_KFGgfT_mH1ACAYe1IE-kW3oo_m5pnhHGb0Th3JQGYYiqt2OXA0qh1wtlOFanze6prHIXDaNeVhaXCP2XaP4Dg8NIH6pzgOW9y7EpD_wmG0TnIa6SwzaRtqeEMAHhvRXl56y1IltNWpqxQ4jzTmg6aLrnQkcoA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"queryString\": \"c\",\r\n  \"queryType\": 8,\r\n  \"typeQuickSearch\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://servicesqa.siigo.com/cross/api/v1/quicksearch",
+					"protocol": "https",
+					"host": [
+						"servicesqa",
+						"siigo",
+						"com"
+					],
+					"path": [
+						"cross",
+						"api",
+						"v1",
+						"quicksearch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "QuickSearch Chile",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkQ3OTkxNEU2MTJFRkI4NjE5RDNFQ0U4REFGQTU0RDFBMDdCQjM5QjJSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjE1a1U1aEx2dUdHZFBzNk5yNlZOR2dlN09iSSJ9.eyJuYmYiOjE2ODY2NzE0NzcsImV4cCI6MTY4Njc1Nzg3NywiaXNzIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwIiwiYXVkIjoiaHR0cDovL21zLXNlY3VyaXR5c2VydmljZTo1MDAwL3Jlc291cmNlcyIsImNsaWVudF9pZCI6IlNpaWdvV2ViIiwic3ViIjoiNDI2Nzg3IiwiYXV0aF90aW1lIjoxNjg2NjcxNDc3LCJpZHAiOiJsb2NhbCIsIm5hbWUiOiJhZG1pbkBldmVudG9zLmNvbSIsIm1haWxfc2lpZ28iOiJhZG1pbkBldmVudG9zLmNvbSIsImNsb3VkX3RlbmFudF9jb21wYW55X2tleSI6IkVWRU5UT1NFTkxBTlVCRSIsInVzZXJzX2lkIjoiMTAxOTMiLCJ0ZW5hbnRfaWQiOiIweDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMTU1MjEzIiwidXNlcl9saWNlbnNlX3R5cGUiOiIwIiwicGxhbl90eXBlIjoiMTQiLCJ0ZW5hbnRfc3RhdGUiOiIxIiwibXVsdGl0ZW5hbnRfaWQiOiI3NiIsImNvbXBhbmllcyI6IjEiLCJhcGlfc3Vic2NyaXB0aW9uX2tleSI6IiIsImFjY291bnRhbnQiOiJmYWxzZSIsImp0aSI6Ijc0REI1RTA4MEYyRDRENTFGNkNCNkQ2QzE2RDY0M0I2IiwiaWF0IjoxNjg2NjcxNDc3LCJzY29wZSI6WyJXZWJBcGkiLCJvZmZsaW5lX2FjY2VzcyJdLCJhbXIiOlsiY3VzdG9tIl19.AjaCqUbiFGJlpYSEh3aTcX1z7qGAG6H_0tMy5GNGGChNq9SwWwam6gJV1WYVF3mKe8AaEM98ORckHMlv6cRzqtA6ac-XEtFBTrS1Yg-Hk-q__vNZOdxo_ZB5mdFHgimdIsoGuIUklpzTGHv0Q_z0H23RfLanXH0vNAWtbsQjN7MsYw3dDHDznArjVxF7sllafkL18v6dd99hLvP923NnsUiPbFo2KUd4pfzAZUd5AbYnkUuk3fifQa0FUiJlH9EHZZqpJbEcxzuQ835pmbjqNBFwpMKHNKnWMIvxM6_ndIx7IoVicrUDkUhCP6U4FThRtEAOGJya4qkS3MWmJCE5sw",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"queryString\": \"1\",\r\n  \"queryType\": 19,\r\n  \"typeQuickSearch\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://servicesqacl.siigo.cl/cross/api/v1/quicksearch",
+					"protocol": "https",
+					"host": [
+						"servicesqacl",
+						"siigo",
+						"cl"
+					],
+					"path": [
+						"cross",
+						"api",
+						"v1",
+						"quicksearch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
